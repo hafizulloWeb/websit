@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  margin: 0 auto;
+  background-size: cover;
+  background-image: url(.);
+}
+.a1 {
+
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.img-text {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+h1 {
+  text-align: center;
+}
+.btn:active {
+  color: red;
+  background-color: #212020;
+} 
+
+.btn-father {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: -50px;
+}
+
+.text1 {
+  text-align: center;
+}
+.q1 {
+  text-shadow: 5px 5px 2px rgb(255, 0, 0);
+}
+.Q2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+ position: relative;
+ top: -25PX;
+ margin-bottom: -50PX;
+
+}
+
+.text2 {
+  text-align: center;
+}
+.text-father {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ gap: 20px;
+ color: aliceblue; 
+}
+
+/* 
+.btn {
+  width: 1300px;
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 10px;
+  
+  color: aliceblue;
+  box-shadow: 2px 2px 20px whitesmoke;
+} */
+
+
+.btn {
+  width: 500px;
+  padding: 15px;
+  font-size: 16px;
+  border:1px solid white;
+  background-color: #000000;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 20px  rgba(202, 158, 158, 0);
+  transition: box-shadow 0.7s ease;
+  
+}
+
+
+
+.btn:hover:valid {
+  animation: shadowUpDown 800ms infinite alternate;
+}
+
+
+@keyframes shadowUpDown {
+  0% {
+    box-shadow: +0 +0 26px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 26px rgba(255, 255, 255, 0.5), 0 0px 26px rgba(255, 255, 255, 0.5);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+  .btn {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .btn {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .btn {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 656px) {
+  .btn {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .btn {
+    width: 300px;
+    margin: 0 auto;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
